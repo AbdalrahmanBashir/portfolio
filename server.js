@@ -6,9 +6,21 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(express.json());
-app.use(express.static('public'));
+// Security headers
+app.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+    next();
+});
+
+// Production optimizations
+app.use(express.json({ limit: '10kb' })); // Limit JSON payload size
+app.use(express.static('public', {
+    maxAge: '1d', // Cache static files for 1 day
+    etag: true // Enable ETags for caching
+}));
 
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
@@ -19,13 +31,36 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+// Basic rate limiting
+const rateLimit = new Map();
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+const MAX_REQUESTS = 5; // 5 requests per minute
+
 // Serve the main HTML file
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Handle contact form submissions
+// Handle contact form submissions with rate limiting
 app.post('/api/contact', async (req, res) => {
+    const clientIP = req.ip;
+    const now = Date.now();
+    
+    // Check rate limit
+    if (rateLimit.has(clientIP)) {
+        const { count, timestamp } = rateLimit.get(clientIP);
+        if (now - timestamp < RATE_LIMIT_WINDOW) {
+            if (count >= MAX_REQUESTS) {
+                return res.status(429).json({ error: 'Too many requests. Please try again later.' });
+            }
+            rateLimit.set(clientIP, { count: count + 1, timestamp });
+        } else {
+            rateLimit.set(clientIP, { count: 1, timestamp: now });
+        }
+    } else {
+        rateLimit.set(clientIP, { count: 1, timestamp: now });
+    }
+
     try {
         const { name, email, message } = req.body;
 
@@ -37,7 +72,7 @@ app.post('/api/contact', async (req, res) => {
         // Email configuration
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_USER, // Send to yourself
+            to: process.env.EMAIL_USER,
             subject: `Portfolio Contact from ${name}`,
             text: `
 Name: ${name}
@@ -84,6 +119,17 @@ Abdalrahman Bashir
         console.error('Error:', error);
         res.status(500).json({ error: 'Failed to send message' });
     }
+});
+
+// Error handling for uncaught exceptions
+process.on('uncaughtException', (error) => {
+    console.error('Uncaught Exception:', error);
+    // Perform graceful shutdown if needed
+});
+
+process.on('unhandledRejection', (error) => {
+    console.error('Unhandled Rejection:', error);
+    // Perform graceful shutdown if needed
 });
 
 app.listen(PORT, () => {

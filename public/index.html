@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdalrahman Bashir - Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold gradient-text">AB</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col p-6 space-y-4">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
+        <div class="container mx-auto px-6 text-center animate-fadeIn">
+            <h1 class="text-5xl font-bold gradient-text mb-4">Abdalrahman Bashir</h1>
+            <p class="text-xl text-gray-600 mb-8">Software Engineer | Problem Solver | Innovator</p>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Passionate about building scalable applications and exploring cutting-edge technologies.
+                Specializing in full-stack development with expertise in .NET, React, and cloud solutions.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mb-8">
+                <a href="mailto:abdalr.bashir@gmail.com" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-envelope"></i>
+                    <span>abdalr.bashir@gmail.com</span>
+                </a>
+                <a href="tel:+19132630796" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (913) 263-0796</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abdalrahman-bashir/" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <a href="#contact" class="btn-primary inline-block">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">C#</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">OOP</span>
+                    </div>
+                </div>
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">Back-End</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">ASP.NET</span>
+                        <span class="skill-badge">.NET Core</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Entity Framework</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">REST APIs</span>
+                    </div>
+                </div>
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">Angular</span>
+                        <span class="skill-badge">WPF</span>
+                    </div>
+                </div>
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">MS SQL Server</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                        <span class="skill-badge">Azure DevOps</span>
+                        <span class="skill-badge">CI/CD</span>
+                    </div>
+                </div>
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold mb-4 text-lg text-gray-800">Other</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Software Testing</span>
+                        <span class="skill-badge">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Pharmacy Management System API</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Back-End Development</p>
+                        <ul class="text-gray-600 mb-6 list-disc list-inside space-y-2">
+                            <li>Designed and implemented PostgreSQL schema</li>
+                            <li>Migrated database to Azure for PostgreSQL</li>
+                            <li>Developed .NET Core 8 API</li>
+                            <li>Created CI/CD pipeline in GitHub Actions</li>
+                            <li>Deployed to Azure Web Apps</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="https://pharm-mgt-api-test-hydjbkdzebhue3f3.centralus-01.azurewebsites.net/index.html" 
+                               class="btn-primary text-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Decentralized Content Sharing</h3>
+                        <p class="text-gray-600 mb-4 font-medium">DApps Development</p>
+                        <ul class="text-gray-600 mb-6 list-disc list-inside space-y-2">
+                            <li>Blockchain-based content management</li>
+                            <li>IPFS integration for decentralized storage</li>
+                            <li>Off-chain identity verification</li>
+                            <li>React.js, Node.js, Solidity, Polygon</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/AbdalrahmanBashir/DecentralizedContentSharingApp" 
+                               class="btn-primary text-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Coming Soon) -->
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Upcoming Project</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Coming Soon</p>
+                        <div class="flex items-center justify-center h-32">
+                            <span class="text-gray-400 text-lg">Stay tuned!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Education</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">University of Missouri - Kansas City</h3>
+                            <p class="text-gray-600">Bachelor's, Computer Science</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-gray-600">May 2025</p>
+                            <p class="text-primary font-medium">GPA: 3.3</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        Relevant Coursework: Problem-Solving and Programming, Distributed Computing Systems, 
+                        Data Structures, Cybersecurity, Software Engineering, Algorithms & Complexity, 
+                        Database Management Systems
+                    </p>
+                </div>
+
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">AI-Empowered Spatial Computing</h3>
+                            <p class="text-gray-600">Certification, UMKC</p>
+                        </div>
+                        <p class="text-gray-600">September 2024 - March 2025</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>U.S. Department of Education, Center of Excellence certification</li>
+                        <li>Geospatial data analysis with Python and R</li>
+                        <li>AI/ML applications in spatial computing</li>
+                        <li>AR/VR development with Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Professional Experience</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Assistant Researcher</h3>
+                            <p class="text-gray-600">University of Missouri - Kansas City</p>
+                        </div>
+                        <p class="text-gray-600">June 2024 - Present</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Technologies: Linux, NS3, C++</li>
+                        <li>Data analysis and research methodology implementation</li>
+                        <li>Network protocol error analysis and optimization</li>
+                        <li>Technical documentation and presentation</li>
+                        <li>Research planning and milestone management</li>
+                        <li>Literature review and methodology research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/AbdalrahmanBashir" class="hover:text-primary transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abdalrahman-bashir/" class="hover:text-primary transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:abdalr.bashir@gmail.com" class="hover:text-primary transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Abdalrahman Bashir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

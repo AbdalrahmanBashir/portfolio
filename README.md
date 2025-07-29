@@ -19,7 +19,7 @@ A modern, responsive single-page portfolio website built with HTML, Tailwind CSS
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/AbdalrahmanBashir/portfolio.git
 cd portfolio-website
 ```
 

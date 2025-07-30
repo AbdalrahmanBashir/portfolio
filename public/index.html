@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -18,9 +20,7 @@
                     <a href="#about" class="nav-link">About</a>
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#certificates" class="nav-link">Certificates</a>
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#publications" class="nav-link">Publications</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
                 <button class="md:hidden" id="mobile-menu-button">
@@ -36,260 +36,436 @@
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
             <a href="#projects" class="nav-link">Projects</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#certificates" class="nav-link">Certificates</a>
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#publications" class="nav-link">Publications</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
     </div>
 
-    <!-- Hero Section -->
     <section id="about" class="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
-        <div class="container mx-auto px-6 text-center animate-fadeIn">
-            <h1 class="text-5xl font-bold gradient-text mb-4">Abdalrahman Bashir</h1>
-            <p class="text-xl text-gray-600 mb-8">Software Engineer | Problem Solver | Innovator</p>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                Highly motivated Computer Science graduate with hands-on experience in full-stack and backend development, specializing in scalable REST APIs, database management, and cloud deployment.
-                Adept at using modern technologies like C#, .NET, React, and Azure DevOps to deliver robust software solutions. Proven ability to lead projects and collaborate in Agile environments. 
-                Seeking to apply strong analytical and development skills to impactful software engineering roles.
+        <div class="container mx-auto px-6">
+        <div class="text-center mb-8">
+            <h1 class="text-5xl font-bold gradient-text mb-4" 
+                data-aos="fade-up" 
+                data-aos-duration="3500" 
+                data-aos-delay="500">
+            Abdalrahman Bashir
+            </h1>
+        </div>
+        
+        <div class="max-w-5xl mx-auto space-y-6">
+            <p
+            class="text-xl text-gray-700 leading-relaxed text-justify stream-chunk"
+            data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="1000"
+            >
+            I'm Abdalrahman Bashir, a systems-focused software engineer. I
+            graduated with a Bachelor of Science in Computer Science from the
+            University of Missouri-Kansas City. I have a deep passion for
+            backend development, distributed systems, and infrastructure-level
+            problem solving. I specialize in building production-ready
+            microservices, scalable APIs, and real-time data processing
+            pipelines using modern technologies within the .NET, C++, and Python
+            ecosystems.
             </p>
+    
+            <p
+            class="text-xl text-gray-700 leading-relaxed text-justify"
+            data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="1500"
+            >
+            My work involves a broad spectrum of areas, particularly focusing on
+            the development of high-throughput gRPC-based MapReduce systems using
+            C# and .NET 9, and deploying full-stack applications with React,
+            TypeScript, and OpenAI's large language models. As a Research
+            Assistant at UMKC, I contributed to network simulations and system
+            performance research. It involved combining PyTorch, C++, and
+            Linux-native tools to assess mobility and communication strategies in
+            real-time environments.
+            </p>
+    
+            <p
+            class="text-xl text-gray-700 leading-relaxed text-justify"
+            data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="2000"
+            >
+            I prioritize clean architecture, performance optimization, and a
+            developer-first approach to observability. My development workflow is
+            built on a solid foundation of software engineering principles,
+            including Domain-Driven Design, Test-Driven Development, and CI/CD
+            automation using Azure DevOps and GitHub Actions. I am also
+            proficient in SQL and NoSQL data models, cloud-native deployments on
+            Azure, and container orchestration with Docker.
+            </p>
+    
+            <p
+            class="text-xl text-gray-700 leading-relaxed text-justify"
+            data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="2500"
+            >
+            I approach each project with an engineer's discipline and a builder's
+            mindset. I am particularly attracted to challenges involving
+            distributed coordination, efficient resource utilization, and
+            systems-level thinking.
+            </p>
+        </div>
+
+        <div class="text-center mt-12">
+            <div class="flex flex-wrap justify-center gap-8 mb-8"
+            data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="3000">
+              <a
+                href="mailto:abdalr.bashir@gmail.com"
+                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+              >
+                <i class="fas fa-envelope text-2xl"></i>
+                <span class="text-xl font-medium">abdalr.bashir@gmail.com</span>
+              </a>
+              <a
+                href="tel:+19132630796"
+                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+              >
+                <i class="fas fa-phone text-2xl"></i>
+                <span class="text-xl font-medium">+1 (913) 263‑0796</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abdalrahman-bashir/"
+                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+              >
+                <i class="fab fa-linkedin text-2xl"></i>
+                <span class="text-xl font-medium">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          
+    
+        <div class="text-center mt-12">
             <div class="flex flex-wrap justify-center gap-6 mb-8">
-                <a href="mailto:abdalr.bashir@gmail.com" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
-                    <i class="fas fa-envelope"></i>
-                    <span>abdalr.bashir@gmail.com</span>
-                </a>
-                <a href="tel:+19132630796" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
-                    <i class="fas fa-phone"></i>
-                    <span>+1 (913) 263-0796</span>
-                </a>
-                <a href="https://www.linkedin.com/in/abdalrahman-bashir/" class="hover-card flex items-center space-x-2 text-gray-600 hover:text-primary">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
+            <!-- contact links -->
             </div>
-            <a href="#contact" class="btn-primary inline-block">
-                Get in Touch
-            </a>
+            <a href="#contact" class="btn-primary inline-block"  data-aos="fade-up"
+            data-aos-duration="3500"
+            data-aos-delay="3500">Get in Touch</a>
+        </div>
+
+        
         </div>
     </section>
 
+    
     <!-- Skills Section -->
-    <section id="skills" class="py-20">
+    <section id="skills" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">Languages</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">C#</span>
-                        <span class="skill-badge">C++</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">OOP</span>
-                    </div>
-                </div>
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">Back-End</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">ASP.NET</span>
-                        <span class="skill-badge">.NET Core</span>
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">Entity Framework</span>
-                        <span class="skill-badge">Express.js</span>
-                        <span class="skill-badge">REST APIs</span>
-                    </div>
-                </div>
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">Frontend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">React.js</span>
-                        <span class="skill-badge">Angular</span>
-                        <span class="skill-badge">WPF</span>
-                    </div>
-                </div>
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">Databases</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">MS SQL Server</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">DevOps</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">GitHub Actions</span>
-                        <span class="skill-badge">Azure DevOps</span>
-                        <span class="skill-badge">CI/CD</span>
-                    </div>
-                </div>
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="font-bold mb-4 text-lg text-gray-800">Other</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-badge">Problem Solving</span>
-                        <span class="skill-badge">Software Testing</span>
-                        <span class="skill-badge">Web Development</span>
-                    </div>
-                </div>
-            </div>
+        <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">C#</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">C++</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Python</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">JavaScript</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">TypeScript</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">SQL</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">.NET 9 &amp; .NET Core</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">ASP.NET Core</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Entity Framework Core</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">gRPC Streaming RPCs</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">React</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">PyTorch</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Docker &amp; Docker-Compose</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Azure DevOps</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">GitHub Actions</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Git &amp; Jira</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Visual Studio</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Swagger / OpenAPI</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Postman</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Azure Database Migration Service</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Linux</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">PostgreSQL</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Microservices Architecture</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">RESTful APIs</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Single Page Applications (SPA)</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Data Modeling (ER &amp; Relational)</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Domain-Driven Design (DDD)</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Design Patterns</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Test-Driven Development (TDD)</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">CI/CD</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Agile &amp; SDLC</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Retrieval-Augmented Generation (RAG)</div>
+            <div         class="p-4 bg-white rounded-lg shadow text-center transition-transform duration-300 ease-out transform hover:scale-105"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100">Prompt Engineering</div>
+        </div>
         </div>
     </section>
-
+  
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-800">Pharmacy Management System API</h3>
-                        <p class="text-gray-600 mb-4 font-medium">Back-End Development</p>
-                        <ul class="text-gray-600 mb-6 list-disc list-inside space-y-2">
-                            <li>Designed and implemented PostgreSQL schema</li>
-                            <li>Migrated database to Azure for PostgreSQL</li>
-                            <li>Developed .NET Core 8 API</li>
-                            <li>Created CI/CD pipeline in GitHub Actions</li>
-                            <li>Deployed to Azure Web Apps</li>
-                        </ul>
-                        <div class="flex space-x-4">
-                            <a href="https://pharm-mgt-api-test-hydjbkdzebhue3f3.centralus-01.azurewebsites.net/index.html" 
-                               class="btn-primary text-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
+        <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
+        <div class="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-800">Decentralized Content Sharing</h3>
-                        <p class="text-gray-600 mb-4 font-medium">DApps Development</p>
-                        <ul class="text-gray-600 mb-6 list-disc list-inside space-y-2">
-                            <li>Blockchain-based content management</li>
-                            <li>IPFS integration for decentralized storage</li>
-                            <li>Off-chain identity verification</li>
-                            <li>React.js, Node.js, Solidity, Polygon</li>
-                        </ul>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/AbdalrahmanBashir/DecentralizedContentSharingApp" 
-                               class="btn-primary text-sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Project 1-->
+            <div class="flex-1 pb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">AI‑Driven Money Management App</h3>
+                <div class="max-w-5xl mx-auto">
+                <p class="text-gray-800 mb-6 leading-relaxed text-justify">
+                  Developed end-to-end, scalable RESTful APIs using C#, .NET Core,
+                  Entity Framework Core, and Visual Studio, ensuring organized and
+                  maintainable code by following programming best practices such as
+                  Object‑Oriented Programming (OOP), Domain‑Driven Design (DDD),
+                  design patterns, and Test‑Driven Development (TDD).
+                </p>
+              
+                <p class="text-gray-800 mb-6 leading-relaxed text-justify">
+                  Collaborated within a cross‑functional team to streamline deployments
+                  by setting up an automated CI/CD pipeline in Azure DevOps to build
+                  and deploy the app, using Agile methodology, the full SDLC, and tools
+                  like Git for version control and Jira for task tracking, which
+                  improved team efficiency and delivery cadence.
+                </p>
+              
+                <p class="text-gray-800 mb-6 leading-relaxed text-justify">
+                  Engineered a responsive front‑end UI using JavaScript, TypeScript,
+                  React, HTML, and Tailwind CSS, delivering a smooth single‑page
+                  application experience that adapts flawlessly across devices.
+                </p>
+              
+                <p class="text-gray-800 mb-6 leading-relaxed text-justify">
+                  Orchestrated a retrieval‑augmented generation (RAG) system with
+                  PostgreSQL and OpenAI’s LLM, integrating vector similarity search
+                  on stored data and prompt engineering to provide personalized
+                  financial advice in real time.
+                </p>
+              </div>
 
-                <!-- Project 3 (Coming Soon) -->
-                <div class="project-card">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-gray-800">Upcoming Project</h3>
-                        <p class="text-gray-600 mb-4 font-medium">Coming Soon</p>
-                        <div class="flex items-center justify-center h-32">
-                            <span class="text-gray-400 text-lg">Stay tuned!</span>
-                        </div>
-                    </div>
-                </div>
+              <div class="text-center">
+                <!-- make the link a block-level element with bottom margin -->
+                <a href="https://github.com/phucv2376/451Project"
+                    class="btn-primary text-sm inline-block mx-auto mb-8">
+                    GitHub
+                </a>
+                <a href="https://youtu.be/myH4uLfbue4"
+                    class="btn-primary text-sm inline-block mx-auto mb-8">
+                    View Project
+                </a>
             </div>
-        </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Education</h2>
-            <div class="max-w-3xl mx-auto space-y-8">
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-800">University of Missouri - Kansas City</h3>
-                            <p class="text-gray-600">Bachelor's, Computer Science</p>
-                        </div>
-                        <div class="text-right">
-                            <p class="text-gray-600">May 2025</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">
-                        Relevant Coursework: Problem-Solving and Programming, Distributed Computing Systems, 
-                        Data Structures, Cybersecurity, Software Engineering, Algorithms & Complexity, 
-                        Database Management Systems
+            </div>
+              
+            <!-- Project 2 -->
+            <div class="pb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Pharmacy Management System API</h3>
+                <div class="max-w-5xl mx-auto">
+                    <p class="text-gray-800 mb-8 leading-relaxed text-justify">
+                        Designed a normalized SQL schema using ER and relational modeling to optimize query performance and data integrity for the Pharmacy Management System.
+                    </p>
+                    <p class="text-gray-800 mb-8 leading-relaxed text-justify">
+                        Developed an ASP.NET Core (.NET 8) RESTful API with a database‑first approach, incorporating comprehensive integration tests for reliable scalability and streamlined debugging.
+                    </p>
+                    <p class="text-gray-800 mb-8 leading-relaxed text-justify">
+                        Documented all endpoints with Swagger/OpenAPI and Postman, migrated PostgreSQL to Azure via Azure Database Migration Service, and automated deployment through GitHub Actions to deliver a highly available, cloud‑native backend.
                     </p>
                 </div>
+              
+                <div class="text-center">
+                    <!-- make the link a block-level element with bottom margin -->
+                    <a href="https://github.com/AbdalrahmanBashir/EFCoreProject/tree/master/EFCoreProject.API"
+                        class="btn-primary text-sm inline-block mx-auto mb-8">
+                        GitHub
+                    </a>
+                    <a href="https://pharm-mgt-api-test-hydjbkdzebhue3f3.centralus-01.azurewebsites.net/index.html"
+                        class="btn-primary text-sm inline-block mx-auto mb-8">
+                        View Project
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Certifications</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/2">
-                            <img src="images/certificates/spatial-computing-cert.jpg" 
-                                 alt="AI-Empowered Spatial Computing Certificate" 
-                                 class="w-full rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-                                 onclick="window.open('https://credsverse.com/credentials/ba2dda51-ed9b-434e-b4ed-cc61df88e55e', '_blank')"
-                                 style="cursor: pointer;">
-                        </div>
-                        <div class="md:w-1/2">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-800">AI-Empowered Spatial Computing</h3>
-                                    <p class="text-gray-600">Data Science and Analytics Innovation Center</p>
-                                </div>
-                                <p class="text-gray-600">March 2025</p>
-                            </div>
-                            <p class="text-gray-600 mb-4">U.S. Department of Education, Center of Excellence in Spatial Computing</p>
-                            <div class="mb-6">
-                                <h4 class="font-semibold text-gray-800 mb-2">Skills Acquired:</h4>
-                                <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                    <li>Fundamentals of Spatial Computing</li>
-                                    <li>Human-Computer Interactions: VR/AR</li>
-                                    <li>Spatial Computing Design</li>
-                                    <li>Spatial Data Analysis</li>
-                                </ul>
-                            </div>
-                            <div class="flex space-x-4">
-                                <a href="https://credsverse.com/credentials/ba2dda51-ed9b-434e-b4ed-cc61df88e55e" 
-                                   target="_blank"
-                                   class="btn-primary">
-                                    Verify Credential
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    
+            <!-- Project 3 -->
+            <div class="flex-1 pb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Decentralized Content Sharing</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed text-justify">
+                    Built a decentralized content sharing application with a React front end and Node.js verifier server, enabling users to upload and register files on IPFS and interact with smart contracts on the Polygon Amoy Testnet.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed text-justify">
+                    Integrated Privado ID for off‑chain credential issuance and Metamask‑based wallet authentication, using QR‑code scanning to grant verified access to the DApp’s content management features.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed text-justify">
+                    Wrote and deployed Solidity smart contracts on the Polygon Amoy Testnet to handle content registration, metadata management, and ownership transfers, and implemented automated migration and testing scripts via Hardhat for reliable contract lifecycle management.
+                </p>
+                <div class="text-center">
+                <a href="https://github.com/AbdalrahmanBashir/DecentralizedContentSharingApp" 
+                    class="btn-primary text-sm inline-block mx-auto mb-8">
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/watch?v=NH30di3vP6g" 
+                class="btn-primary text-sm inline-block mx-auto mb-8">
+                View Project
+                </a>
+            </div>
+            </div>
+    
+            <!-- Project 4 (Coming Soon) -->
+            <div class="text-center flex-1 pb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Upcoming Project</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Stay tuned for my next exciting project! I'm working on something new and innovative.
+                </p>
+                <div class="h-12 flex items-center justify-center mb-8">
+                    <span class="text-gray-400">Coming Soon</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Professional Experience</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="hover-card bg-white p-6 rounded-lg shadow-sm">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-800">Assistant Researcher</h3>
-                            <p class="text-gray-600">University of Missouri - Kansas City</p>
-                        </div>
-                        <p class="text-gray-600">June 2024 - Present</p>
-                    </div>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        <li>Technologies: Linux, NS3, C++</li>
-                        <li>Data analysis and research methodology implementation</li>
-                        <li>Network protocol error analysis and optimization</li>
-                        <li>Technical documentation and presentation</li>
-                        <li>Research planning and milestone management</li>
-                        <li>Literature review and methodology research</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </section>
+  
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20">
+        <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Publications</h2>
+        <div class="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
+            <!-- Publication 1 View Publication -->
+            <div class="text-center flex-1 pb-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">UAVIDS-2025: A Benchmark Dataset for Intrusion Detection in UAV Networks Using Machine Learning Techniques</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+                Zeng, Q., Bashir, A. H., & Nait-Abdesselam, F. (2025). UAVIDS-2025: A Benchmark Dataset for Intrusion Detection in UAV Networks Using Machine Learning Techniques. Accepted to the 2025 IEEE Conference on Communications and Network Security (CNS), Avignon, France; to be published in IEEE Xplore and presented August 2025.
+            </p>
+            <a href="#"
+                class="btn-primary text-sm inline-block mb-8">
+                Coming Soon
+            </a>
+            </div>
+    
+            <!-- Publication 2 -->
+            <div class="text-center flex-1 pb-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Upcoming Research Publication</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+                TDB
+            </p>
+            <a href="#"
+                class="btn-primary text-sm inline-block mb-8">
+                Coming Soon
+            </a>
+            </div>
+    
+            <!-- Publication 3 (Coming Soon) -->
+            <div class="text-center flex-1 pb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Upcoming Research Publication</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                TDB
+                </p>
+                <a href="#"
+                class="btn-primary text-sm inline-block mb-8">
+                Coming Soon
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+  
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
+    <section id="contact" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Get in Touch</h2>
             <div class="max-w-lg mx-auto">
@@ -333,5 +509,16 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // animate only once on scroll
+    duration: 1000, // animation duration
+    mirror: true, // animate in reverse on scroll up
+    offset: 100, // start animation 100px before element comes into view
+    easing: 'ease-in-out',
+    anchorPlacement: 'top-center',
+  });
+</script>
 </body>
 </html> 

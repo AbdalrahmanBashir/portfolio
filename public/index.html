@@ -8,6 +8,13 @@
     <link href="css/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-pc6W08bpY+8kMPcr2z2C2J1KBDFyxrQSRL4BuqQ+U+O6Eztm3HtMLOX6P8h8eE4vqf9V2zCD30sI1u7nxF3vTw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 
 </head>
 <body class="bg-gray-50">
@@ -52,7 +59,7 @@
             </h1>
         </div>
         
-        <div class="max-w-5xl mx-auto space-y-6">
+        <div class="max-w-7xl mx-auto space-y-6">
             <p
             class="text-xl text-gray-700 leading-relaxed text-justify stream-chunk"
             data-aos="fade-up"
@@ -114,33 +121,36 @@
         </div>
 
         <div class="text-center mt-12">
-            <div class="flex flex-wrap justify-center gap-8 mb-8"
-            data-aos="fade-up"
-            data-aos-duration="3500"
-            data-aos-delay="3000">
+            <div
+              class="flex flex-wrap justify-center items-center divide-x divide-gray-300 divide-opacity-50 mb-8"
+              data-aos="fade-up"
+              data-aos-duration="3500"
+              data-aos-delay="3000"
+            >
               <a
                 href="mailto:abdalr.bashir@gmail.com"
-                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+                class="flex items-center px-6 space-x-3 text-gray-600 hover:text-primary transition"
               >
                 <i class="fas fa-envelope text-2xl"></i>
                 <span class="text-xl font-medium">abdalr.bashir@gmail.com</span>
               </a>
               <a
                 href="tel:+19132630796"
-                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+                class="flex items-center px-6 space-x-3 text-gray-600 hover:text-primary transition"
               >
-                <i class="fas fa-phone text-2xl"></i>
+                <i class="fas fa-phone-alt text-2xl"></i>
                 <span class="text-xl font-medium">+1 (913) 263‑0796</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/abdalrahman-bashir/"
-                class="hover-card flex items-center space-x-4 text-gray-600 hover:text-primary transition p-2 rounded-lg"
+                class="flex items-center px-6 space-x-3 text-gray-600 hover:text-primary transition"
               >
-                <i class="fab fa-linkedin text-2xl"></i>
+                <i class="fab fa-linkedin-in text-2xl"></i>
                 <span class="text-xl font-medium">LinkedIn</span>
               </a>
             </div>
           </div>
+          
           
     
         <div class="text-center mt-12">
@@ -302,12 +312,12 @@
     <section id="projects" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
-        <div class="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
+        <div class="flex flex-col gap-16 max-w-7xl mx-auto">
 
             <!-- Project 1-->
             <div class="flex-1 pb-8">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">AI‑Driven Money Management App</h3>
-                <div class="max-w-5xl mx-auto">
+                <div>
                 <p class="text-gray-800 mb-6 leading-relaxed text-justify">
                   Developed end-to-end, scalable RESTful APIs using C#, .NET Core,
                   Entity Framework Core, and Visual Studio, ensuring organized and
@@ -355,7 +365,7 @@
             <!-- Project 2 -->
             <div class="pb-8">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Pharmacy Management System API</h3>
-                <div class="max-w-5xl mx-auto">
+                <div >
                     <p class="text-gray-800 mb-8 leading-relaxed text-justify">
                         Designed a normalized SQL schema using ER and relational modeling to optimize query performance and data integrity for the Pharmacy Management System.
                     </p>
@@ -383,6 +393,7 @@
             <!-- Project 3 -->
             <div class="flex-1 pb-8">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Decentralized Content Sharing</h3>
+                <div>
                 <p class="text-gray-600 mb-8 leading-relaxed text-justify">
                     Built a decentralized content sharing application with a React front end and Node.js verifier server, enabling users to upload and register files on IPFS and interact with smart contracts on the Polygon Amoy Testnet.
                 </p>
@@ -392,6 +403,7 @@
                 <p class="text-gray-600 mb-8 leading-relaxed text-justify">
                     Wrote and deployed Solidity smart contracts on the Polygon Amoy Testnet to handle content registration, metadata management, and ownership transfers, and implemented automated migration and testing scripts via Hardhat for reliable contract lifecycle management.
                 </p>
+                </div>
                 <div class="text-center">
                 <a href="https://github.com/AbdalrahmanBashir/DecentralizedContentSharingApp" 
                     class="btn-primary text-sm inline-block mx-auto mb-8">
@@ -423,7 +435,7 @@
     <section id="publications" class="py-20">
         <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Publications</h2>
-        <div class="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
+        <div class="flex flex-col gap-16 max-w-7xl mx-auto px-4">
             <!-- Publication 1 View Publication -->
             <div class="text-center flex-1 pb-8">
             <h3 class="text-2xl font-bold text-gray-800 mb-4">UAVIDS-2025: A Benchmark Dataset for Intrusion Detection in UAV Networks Using Machine Learning Techniques</h3>
